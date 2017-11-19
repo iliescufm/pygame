@@ -1,0 +1,281 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+	<head>
+		<title>Trosnoth Player Statistics</title>
+		<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAABGBAAARgQBRlQghwAAAAd0SU1FB9kGGRY7E/sTe9YAAAG4SURBVDjLtVIxiBNBFH2Z+TszmdkhmYRNNAaXZG2uE0xlZRERmwi2Ka6ySqXTC6JYCjZWpjwbWc/isLCwsbMxWMoVIpyIXqWBHHhkbExIziRe4+v+m//+n3nzODbAOXdFa60mk8nhuh6OzfgwHo+PALzBv5AkyVKtlLoHYAogpGl6EadBkiQ959x1AMiyLIui6EgI8brf7xMAVKvV2865CyvF1tqbAIIx5s6Mk1L+AHAfAEajEZNSvmOMfel0OuqvAYyxr9bap4uclPIngIezOs/zAhF91FrvLYlrtVqPc/4rhLDECyHmA/I8n3mzDSC02+3mvNEY85yIXp68lVLqGxE9WOTSND0PIGitbwAAA4DpdHouhPB9hamXyuXyo0Wu2+0e/tG4Oam13iGivdP8VLPZbAEI1treogdXOedhOByuDZb3HgBQLBZvAQitVuvMciQ5/xTH8YtN2733jIgOjDHPVuXgWqFQCFLKJ957cfK8Xq9vCSHeM8b2B4MBrXvfZcbYMWPsOI7jx5VKpVcqlfpa61cAQhRFB1mWVdaJAQCNRuOsUuouEb0los9EtE9Eu8aYbfwP/AbP8GDkCOFQpQAAAABJRU5ErkJggg==" />
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<style type='text/css'>
+		html {
+			margin: 0;
+			padding: 0;
+			color: #000000;
+			font: normal 12px "Tahoma", Verdana, Arial, Sans-Serif;
+		}
+
+		/* Html Elements */
+
+		h1, h2, h3, h4 {
+			display: block;
+			margin: 0px 0px 7px 0px;
+			padding: 0px;
+			font-weight: normal;
+		}
+		
+		h1 {
+			font-size: 300%;
+		}
+		
+		h2 {
+			font-size: 130%;
+		}
+
+		table {
+			color: #333333;
+			margin: 10px 10px 20px;
+			border-left: 1px solid #cbcbb4;
+			border-top: 1px solid #cbcbb4;
+			font-size: 90%;
+		}
+
+		th, td {
+			border-right: 1px solid #cbcbb4;
+			border-bottom: 1px solid #cbcbb4;
+			padding: 5px 7px !important;
+		}
+
+		th {
+			background-color: #e0e0cf;
+		}
+
+		tr.alt td {
+			background-color: #eaeadf;
+		}
+		
+		.leader {
+			background-color: #FFC6B3;
+		}
+		
+		.bot {
+			background-color: #CCCCCC;
+			color: #888888;
+		}
+		
+		.bot .name {
+			color: #555555;
+		}
+
+        .wintext {
+            font-size: 200%;
+        }
+
+        .blueteam {
+            background-color: navy;
+            color: white;
+        }
+        
+        .redteam {
+            background-color: maroon;
+            color: white
+        }
+
+        .rogue {
+            background-colour: grey;
+            color: white
+        }
+
+		/* Structure */
+
+		body {
+			margin: 0; padding: 0;
+		}
+
+		#topnav {
+			float: left;
+			width: 100%;
+			color: #555555;
+			background-color: #f1efe3;
+			border-bottom: 1px solid #000000;
+		}
+
+		#header {
+			background-color:#DEB887;
+			float: left;
+			width: 80%;
+			height:95px;
+			clear: left;
+			color: #000000;
+			border-bottom: 1px solid #000000;
+		}
+
+		#whatson {
+			background-color:#DEB887;
+			float: left;
+			width: 20%;
+			height:95px;
+			clear: right;
+			color: #000000;
+			border-bottom: 1px solid #000000;
+		}
+
+		#wrapper {
+			clear: both;
+			width: 100%;
+			margin: 0 auto;
+		}
+
+		#content-wrapper {
+			width: 60%;
+			float: left;
+			line-height: 1.8em;
+		}
+
+		#content {
+			width:95%;
+			float: left;
+			padding: 10px;
+			margin-right: 30px;
+		}
+
+		#sidebar-wrapper {
+			width: 40%;
+			float: left;
+		}
+
+		/* Header */
+
+		#header .logo {
+			float: left;
+			
+		}
+
+		#header .bar {
+			float: left;
+			padding-top: 7px;
+			padding-right: 20px;
+			padding-bottom: 10px;
+			padding-left: 0px;
+		}
+
+		.titleContents {
+			float: left;
+			margin: 0;
+			padding-top: 15px;
+			padding-right: 20px;
+			padding-bottom: 10px;
+			padding-left: 20px;
+		}
+		
+		.content th {
+			background-color:#F4A460;
+			font-weight:bold;
+			border:2px solid brown;
+		}
+
+		.content td {
+			border:2px solid brown;
+			text-align:center;
+		}
+
+
+		table.ladder {
+			font-family:"Tahoma";
+			font-size:14px;
+			border:2px solid brown;
+			border-collapse:collapse;
+		}
+
+		.ladder th {
+			padding:5px 5px 5px 5px;
+			background-color:#F4A460;
+			font-weight:bold;
+			border:2px solid brown;
+		}
+
+		.ladder td {
+			padding:5px 50px 5px 50px;
+			border:2px solid brown;
+			text-align:center;
+		}
+		
+		.name {
+		    color: blue;
+		    cursor: pointer;
+		}
+		
+		.name:hover {
+			text-decoration: underline;
+		}
+		</style>
+		
+		<script language="JavaScript">
+		function toggle(whichOne) {
+			var el = document.getElementById(whichOne);
+			if (el.style.display != 'none') {
+				el.style.display = 'none';
+			} else {
+				el.style.display = '';
+			}
+		}
+		
+		function setStyleByClass(c,p,v,t){
+			var elements;
+			var re = new RegExp('\\b' + c + '\\b');
+			
+			if (t == undefined) {
+				t = "style";
+			}
+			
+			elements = document.getElementsByTagName("*");
+			
+			for (var i = 0; i < elements.length; i++){
+				var node = elements.item(i);
+				for(var j = 0; j < node.attributes.length; j++) {
+					if(node.attributes.item(j).nodeName == 'class') {
+						if(re.test(node.attributes.item(j).nodeValue)) {
+							if (t == "style") {
+								eval('node.style.' + p + " = '" +v + "'");
+							} else {
+								eval("node.colSpan = " + v);
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		function navigate(number, columns) {
+			setStyleByClass("topLink", "color", "blue");
+			el = document.getElementById("link" + number);
+			el.style.color = "black";
+			
+			setStyleByClass("allRows", "display", "none");
+			setStyleByClass("group" + number, "display", "");
+			
+			setStyleByClass("details", false, columns, "colspan");
+		}
+		</script>
+	</head>
+
+	<body id="module">
+	
+		<!-- Header -->
+		<div id="header">
+			<img src="data:image/png;base64,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" class='logo' alt="UberTweak Logo" />
+		
+			<div class="titleContents">
+				<h1>Trosnoth Player Statistics</h1>
+				<h2>[[NAVIGATION]]</h2>
+			</div>
+
+		</div>
+		<div id="whatson">
+			&nbsp;
+		</div>
+	
+		<!-- Content -->
+
+		<div id="content">
+[[TABLE]]
+		</div>
+	</body>
+</html>

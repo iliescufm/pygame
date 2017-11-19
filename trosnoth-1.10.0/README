@@ -1,0 +1,88 @@
+Trosnoth Source Repository
+==========================
+
+
+Quick Intro
+-----------
+
+Trosnoth is a multiplayer 2D platform sidescroller, where you control a single soldier. With your team, you must capture all the territory in the entire map before your enemy does.
+
+See http://trosnoth.org/ for the game website.
+
+The game is licensed under GPLv2.
+
+To run the game from the repository, you can use run-trosnoth.py.
+
+
+Repository Branch Structure
+---------------------------
+
+This repository has a number of active branches:
+ * ``default`` - this is used for development on the next minor release of
+   Trosnoth. This may include new features, but they must be network-compatible
+   with the current latest Trosnoth release. You should always be able to play
+   Trosnoth from ``default`` and connect to a Trosnoth server running the latest
+   release, or run a Trosnoth server from ``default`` and have clients on the
+   latest release connect.
+ * ``unstable`` - this is used for development on the next major release. Changes
+   might not be network-compatible with the current latest Trosnoth release. It
+   is always safe to merge ``default`` into ``unstable``, but ``unstable`` should
+   only ever be merged into ``default`` as part of the release of a new major
+   version.
+ * ``server`` - code that's run on the official Trosnoth server. Generally this
+   is just ``default`` with a few configuration options set. It should be safe to
+   merge from ``default`` to ``server`` but don't merge the other way around or
+   other people's servers may inherit settings that are only meant for
+   ``play.trosnoth.org``.
+ * ``camp-stable`` - Trosnoth is used on Ubertweak camps, with a number of minor
+   changes to facilitate LAN-only play. Mainly this involves automatically
+   logging on to the Trosnoth server using the machine's login details, and
+   displaying the current username prominently on the title screen. The
+   ``camp-stable`` branch should be the latest stable Trosnoth release plus these
+   changes. It should be safe to run this version on camp even if you don't
+   have a Trosnoth developer on camp to debug any issues.
+ * ``camp`` - this is the version to use for Ubertweak if you have a Trosnoth
+   developer on your leadership team. It may include changes that haven't been
+   properly play-tested. Isn't that what camp is for? Changes made on camp
+   should generally be made in the ``default`` or ``unstable`` branches and merged
+   forwards into ``camp``, or should be made directly on ``camp`` and later
+   transplanted back to the appropriate branch. You should never merge from
+   ``camp`` or ``camp-stable`` into ``default`` or ``unstable``.
+
+
+Directory Structure
+-------------------
+
+The Trosnoth repository directory structure is laid out as follows:
+ * ``trosnoth/`` - the main Trosnoth Python package
+ * ``trosnoth/bots/`` - code for bots
+ * ``trosnoth/data/`` - contains sprites, fonts, sounds, etc.
+ * ``trosnoth/djangoapp/`` - the Django app for the Trosnoth server
+ * ``trosnoth/gamerecording/`` - code related to recording replays and match
+   statistics, and awarding achievements
+ * ``trosnoth/gui/`` - our utilities for making a GUI using pygame; general
+   utilities and classes, not Trosnoth-specific (see ``trosnothgui/`` below)
+ * ``trosnoth/levels/`` - contains definitions of individual types of Trosnoth
+   level, e.g., Trosball, or standard level (territory capture). Code in levels
+   is always run server-side, and not client-side.
+ * ``trosnoth/messages/`` - definitions of network messages
+ * ``trosnoth/model/`` - everything related to how the game works, including
+   definitions of players, shots, map components etc.; a good place to start
+   investigating this code is ``universe.py``
+ * ``trosnoth/network/`` - coded related to transmitting and receiving over the
+   network; includes AMP connection to authentication server, manhole utils
+   etc.
+ * ``trosnoth/run/`` - code related to Trosnoth entry point, including code for
+   running solo games from the command line
+ * ``trosnoth/server/`` - the Trosnoth server Django server settings and code
+ * ``trosnoth/tools/`` - tools for Trosnoth development
+ * ``trosnoth/triggers/`` - defines different kinds of game triggers, mostly
+   useful for writing levels. When a trigger is active, it watches certain game
+   events and carries out actions in response. E.g., zone capture mechanics and
+   game victory conditions are implemented using triggers.
+ * ``trosnoth/trosnothgui/`` - code related to the Trosnoth UI
+ * ``trosnoth/utils/`` - miscellaneous utility functions and classes
+ * ``trosnoth/web/`` - the Trosnoth server Django server settings and code
+ * ``scripts/`` - entry points for running Trosnoth
+ * ``inskscape/`` - the Inkscape plugin for designing map blocks
+ * ``wininstall/`` - everything related to building the Windows installer

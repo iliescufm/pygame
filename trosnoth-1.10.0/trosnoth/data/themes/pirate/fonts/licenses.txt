@@ -1,0 +1,4 @@
+Licenses for font files in this directory.
+
+RAPSCALL.TTF
+  Rapscallion is a FREE pirate-style font inspired by Melbourne, Australia folk-punk band MUTINY (http://www.mutiny.com.au). Questions/Comments:  ryan_splint@yahoo.com

@@ -1,0 +1,21 @@
+Licenses for font files in this directory.
+
+FreeSans.ttf
+  Copyright (C) 2002 Free Software Foundation.
+  Primoz Peterlin <primoz.peterlin@biofiz.mf.uni-lj.si>
+  Licensed under the GNU General Public License, version 2 or later
+
+Junction.ttf
+  Copyright (c) 2010, Caroline Hadilaksono (caroline@hadilaksono.com),
+  This Font Software is licensed under the SIL Open Font License, Version 1.1.
+  This license is available with a FAQ at http://scripts.sil.org/OFL
+
+KLEPTOCR.TTF
+  Copyright (C) 1999 Ray Larabie <rlarabie@hotmail.com>.
+  This version of the Kleptocracy font was licensed as freeware. Newer versions
+  may require payment for licenses. 
+
+orbitron-light.ttf
+  Copyright (c) 2009, Matt McInerney (<http://pixelspread.com|matt@pixelspread.com>),
+  This Font Software is licensed under the SIL Open Font License, Version 1.1.
+  This license is also available with a FAQ at http://scripts.sil.org/OFL

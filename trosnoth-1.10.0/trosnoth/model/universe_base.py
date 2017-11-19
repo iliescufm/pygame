@@ -1,0 +1,2 @@
+NEUTRAL_TEAM_ID = '\x00'
+NO_PLAYER = '\x00'

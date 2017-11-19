@@ -1,0 +1,96 @@
+<h1>The Übertweak Team</h1>
+
+<h2>Initial concepts</h2>
+Joshua Bartlett, Ashley Donaldson, Megan Wallace, James Cameron, Timothy Pollard, Keith Harbottle, Kyle Johnson, Chuen Chan, Stephen Thorne, Petria Cameron, Jacques Foottit, Tim Ryan
+
+<h2>Game development</h2>
+Josh Bartlett - senior code wizard
+Ashley Donaldson - senior coding time lord
+Sam Horn - senior coding ninja
+Jacques Foottit - graphic artist
+Timothy Bartlett - graphic artist
+Peter Hedges - icon design
+Heather Woodcraft - senior technical consultant
+James Cameron - developer
+Stephen Thorne - developer
+Timothy Pollard - developer
+James Redmond - developer
+Magnon Damant - developer
+Thomas Haines - developer
+
+
+
+<h1>Übertweak Spring 2007</h1>
+
+Christopher Daish - grenade development
+Josh Bell - music
+David Smith - map design
+Laird O'Brien - map design
+Tom O'Brien - map design
+Dean Velthuis - map design
+Liam Gittins - map design
+
+
+<h1>Übertweak Winter 2008</h1>
+
+Christopher Daish - grenade development
+
+
+<h1>Übertweak Spring 2008</h1>
+
+Christopher Daish - grenade development
+
+
+<h1>Übertweak Winter 2009</h1>
+
+<h2>Trosnoth: The Game</h2>
+Anthony B - map design
+Eden Maynard - map design
+Zak McKenna - map design
+
+<h2>Trosnoth: The Movie: The Trailer</h2>
+Produced by: Sam Horn and Tim Ryan
+Directed by: Andy Green
+Blue players: Tim Ryan, Mark Styman, Andrew Austin
+Red players: Jamie O'Brien, Sasha Gibson
+
+
+<h1>Übertweak Spring 2009</h1>
+
+Jacob Cottrell - ricochet development
+Caleb Klein - machine gun development
+Gus McBryde - machine gun development
+Peter Hedges - electromagnetic pulse development
+
+
+<h1>Übertweak Winter 2010</h1>
+
+Michael McClenaghan - flashbang development
+
+
+<h1>Übertweak Spring 2010</h1>
+
+Gus McBryde - respawn freezer development
+John Board - AI improvement development
+Keenan Rigoni - shoxwave development
+Ryan Smith - ninja development
+Caleb Klein - machine gun development
+Damien Sankey - ninja graphics
+
+
+<h1>1.8.x Beta Testing</h1>
+Andrew Austin, Josh Bartlett, Dan Holmans, Peter Hedges, Sacha Inglis, John Board, Owen Bridges
+
+
+<h1>Übertweak Summer 2017</h1>
+
+Courtney Wilton - tutorial design
+Jaiden McElligott - tutorial design
+Jakob Roberts - tutorial design
+Jelly Macmillan - tutorial design
+Jono Jarvis - tutorial design
+Matthew Docherty - bot development
+Ori Jones - tutorial design
+
+
+*************************************************
